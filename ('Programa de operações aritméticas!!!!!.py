@@ -18,7 +18,7 @@ resto = (x % y)
 print('O resto da divisão entre os dois números é: ', resto)
 
 exp = (x ** y)
-print('O número o primeiro número elevado ao segundo é: ', exp)
+print('O primeiro número elevado ao segundo é: ', exp)
 
 divExata = (x // y)
 print('A divisão exata entre os números é: ', divExata)
