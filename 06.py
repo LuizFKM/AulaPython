@@ -1,18 +1,16 @@
-x = int(input('Qual o valor da sua compra? '))
-y = int(input('Quantos ítens são? ')
-        )
-cincoItens = x * 0.05
-seisAteQuatorze = x * 0.10
-quinzeItens = x * 0.15
-precoUm = x - cincoItens
-precoDois = x - seisAteQuatorze
-precoTres = x - quinzeItens
+valor = float(input('Qual o valor da sua compra? '))
+qtd = int(input('Quantos ítens são? '))
 
 
 
-if y <= 5:
-    print("O valor com desconto fica: R$", precoUm)
-elif y > 5 and y <= 14:
-    print("O valor com desconto fica: R$", precoDois)
+
+if qtd <= 5:
+    desconto = valor * 0.05
+elif qtd <= 14:
+    desconto = valor * 0.10
 else:
-    print('O valor com desconto fica: R$', precoTres)
+    desconto = valor * 0.15
+
+print('Valor da Compra..> R$ ', valor)
+print('Valor do desconto..> R$ ', desconto)
+print('Valor da Compra..> R$ ', valor-desconto)
